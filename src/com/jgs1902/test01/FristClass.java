@@ -8,9 +8,8 @@ public class FristClass {
 	static long d; //long = 0L
 	static float e; //float = 0.0f
 	static double f; //double = 0.0d
-	static char g; //
+	static char g; //char = '/u0000' 如果打印出来是一个空格
 	static boolean h; // boolan = false
-	
 	public static void main(String[] args){
 		System.out.println("我的第一个Java类!");
 		System.out.println("Hello World!");
