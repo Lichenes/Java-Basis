@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class test04 {
 	public static void main(String[] args) {
 		Scanner cin = new Scanner(System.in);
+		System.out.println("输入姓名(输入N结束)：");
 		boolean flag;
 		do {
-			System.out.println("输入姓名(输入N结束)：");
 			String name = cin.next();
 			if("N".equals(name)){
 				flag = false;
@@ -16,6 +16,7 @@ public class test04 {
 			}else{
 				System.out.println("输入年龄：");
 				int age = cin.nextInt();
+				System.out.println("开始检票：");
 				System.out.println("姓名："+name);
 				System.out.println("年龄："+age);
 				if(age >= 18 && age <=60){
@@ -23,6 +24,7 @@ public class test04 {
 				}else{
 					System.out.println("票价 = 50");
 				}
+				System.out.println("再次输入姓名(输入N结束)：");
 				flag = true;
 			}
 		} while (flag);
