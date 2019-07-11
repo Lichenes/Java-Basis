@@ -37,7 +37,7 @@ public class Test01 {
 				System.out.println("星期日");
 				break;
 			default:
-				System.out.println("输入错误！请重新输入：");
+				System.out.print("输入错误！请重新");
 				break;
 			}
 		}
