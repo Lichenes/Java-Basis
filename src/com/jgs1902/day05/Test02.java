@@ -9,9 +9,13 @@ public class Test02 {
 		System.out.println("输入整数：");
 		int a = cin.nextInt();
 		int count = 0;
-		while(a!=0){
+		if(a == 0){
+			count++;
+		}else{
+			while(a!=0){
 			a/=10;
 			count++;
+			}
 		}
 		System.out.println("一共有"+count+"位");
 		cin.close();
