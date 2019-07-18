@@ -21,7 +21,7 @@ public class Test05 {
 		System.out.println("输入编号：");
 		e.num = cin.nextInt();
 		System.out.println("输入姓名：");
-		e.name = cin.next();
+		e.name = cin.next(); 
 		System.out.println("输入职位：");
 		e.position = cin.next();
 		e.check();

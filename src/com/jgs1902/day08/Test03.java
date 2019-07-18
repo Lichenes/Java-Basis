@@ -25,7 +25,7 @@ public class Test03 {
 			if("n".equals(p1.name)){
 				break;
 			}
-			System.out.println("输入年龄：");
+			System.out.println("输入年龄 ：");
 			p1.age = cin.nextInt();
 			p1.check();
 		} while (true);
