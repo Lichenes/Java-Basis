@@ -44,7 +44,7 @@ class Management{
 	public void show(Student4[] s){
 		for (Student4 s4 : s) {
 			if(s4 != null){
-				System.out.println(s4.name+"\t"+s4.age+"\t"+s4.className);
+				s4.show();
 			}else{
 				break;
 			}
