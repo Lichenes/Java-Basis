@@ -71,7 +71,7 @@ public class Test03 {
 			d.setName(name);
 		}else{
 			name1 = "企鹅";
-			p.setName(name);
+	   		p.setName(name);
 		}
 		System.out.print("请选择"+name1+"的性别：(1.Q仔 2.Q妹)");
 		int num1 = cin.nextInt();
