@@ -5,15 +5,12 @@ package com.jgs1902.day13;
 //抽取通用的部分编写父类Anima1动物类
 //编写测试类，调用print方法和eat方法
 
-class Animal{
+abstract class Animal{
 	private String name;
 	private int age;
 	public Animal(String name, int age) {
 		this.setName(name);
 		this.setAge(age);
-	}
-	public void print(){
-		System.out.println("姓名："+this.getName()+",年龄"+this.getAge());
 	}
 	public String getName() {
 		return name;
@@ -27,6 +24,10 @@ class Animal{
 	public void setAge(int age) {
 		this.age = age;
 	}
+	public abstract void eat();
+	public void print(){
+		System.out.println("姓名："+this.getName()+",年龄"+this.getAge());
+	}
 }
 
 class Dog extends Animal{
@@ -36,10 +37,11 @@ class Dog extends Animal{
 		this.strain = strain;
 	}
 	public void eat(){
-		System.out.println("姓名："+getName()+"吃狗粮");
+		System.out.println(getName()+"吃狗粮");
 	}
 	public void print(){
-		System.out.println("姓名："+getName()+",年龄"+getAge()+"，品种"+strain);
+		super.print();
+		System.out.println("品种:"+strain);
 	}
 }
 
@@ -51,10 +53,11 @@ class Cat extends Animal{
 		this.sex = sex;
 	}
 	public void eat(){
-		System.out.println("姓名："+getName()+"吃猫粮");
+		System.out.println(getName()+"吃猫粮");
 	}
 	public void print(){
-		System.out.println("姓名："+getName()+",年龄"+getAge()+"，性别"+sex);
+		super.print();
+		System.out.println("性别:"+sex);
 	}
 }
 
@@ -66,5 +69,8 @@ public class Test01 {
 		Cat c = new Cat("tom",18,"公");
 		c.print();
 		c.eat();
+		Animal a = new Dog("旺财", 20, "哈士奇");
+		a.print();
+		a.eat();
 	}
 }
