@@ -49,10 +49,10 @@ public class Test01 {
 		Pet d = new Dog();
 		d.setHealth(60);
 		m.feed(d);
-		System.out.println(d.getHealth());
+		System.out.println("狗狗"+d.getHealth());
 		Pet p = new Penguin();
 		p.setHealth(70);
 		m.feed(p);
-		System.out.println(p.getHealth());
+		System.out.println("企鹅"+p.getHealth());
 	}
 }
